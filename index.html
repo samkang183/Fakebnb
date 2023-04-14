@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fakebnb</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Top Bar -->
+      <div id="top" class="top-bar">
+        <h3 class="intro">Introducing the new fakebnb</h3>
+        <p>Learn More</p>
+      </div>
+      <!-- End Top Bar -->
+      <!-- Navbar -->
+      <div class="navbar">
+        <div>
+          <h1>fakebnb</h1>
+        </div>
+        <div class="search">
+          <form>
+            <div class="input-container">
+              <input type="text" placeholder="Search Properties" />
+            </div>
+            <div>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="menu">
+          <ul class="nav-menu">
+            <li>
+              <a onclick="closeMenu()" href="#listings" class="nav-link">Listings</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#featured" class="nav-link">Featured</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
+            </li>
+          </ul>
+          <div onclick="mobileMenu()" class="mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <!-- Sort Bar -->
+      <div class="sort-bar">
+        <div>
+          <i class="fa-solid fa-house-chimney"></i>
+          <p>House</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-snowflake"></i>
+          <p>Artic</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-rocket"></i>
+          <p>Space</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-tree"></i>
+          <p>Trees</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-building"></i>
+          <p>City</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-campground"></i>
+          <p>Camping</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <p>Beach</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-volleyball"></i>
+          <p>Games</p>
+        </div>
+      </div>
+      <!-- End Sort Bar -->
+
+      <!-- Listings -->
+      <div id="listings" class="listings">
+        <!-- Propert Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+            alt="/"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Los Angeles, CA</h4>
+              <p>4.9<i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by KSH management, LLC</span></p>
+            <p><span class="grey">Jun 15 - 21</span></p>
+            <p>$259 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Northbrook, IL</h4>
+              <p>4.7 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by SK group, LLC</span></p>
+            <p><span class="grey">May 09 - 17</span></p>
+            <p>$364 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvcGVydHl8ZW58MHx8MHx8&auto=format&fit=crop&w=800"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Miami, FL</h4>
+              <p>4.8 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by AHR group, LLC</span></p>
+            <p><span class="grey">Nov 1 - 5</span></p>
+            <p>$449 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Oxford, WI</h4>
+              <p>4.5 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by AHR group, LLC</span></p>
+            <p><span class="grey">Oct 2 - 9</span></p>
+            <p>$249 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Loredo, TX</h4>
+              <p>4.6 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by SK Group, LLC</span></p>
+            <p><span class="grey">Jun 23 - 30</span></p>
+            <p>$319 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Orlando, FL</h4>
+              <p>4.3 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by AHR Group, LLC</span></p>
+            <p><span class="grey">Jun 1 - 7</span></p>
+            <p>$377 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb3BlcnR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Seoul, South Korea</h4>
+              <p>4.9 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by KSH management, LLC</span></p>
+            <p><span class="grey">Jul 8 - 27</span></p>
+            <p>$340 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=850&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Beverly Hills, CA</h4>
+              <p>5.0 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by SK Group, LLC</span></p>
+            <p><span class="grey">July 21 - Aug 2</span></p>
+            <p>$549 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1670963963921-a2da81ee17c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Denver, CO</h4>
+              <p>4.7 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by KSH management, LLC</span></p>
+            <p><span class="grey">Nov 30 - Dec 10</span></p>
+            <p>$219 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1564703048291-bcf7f001d83d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Kyoto, Japan</h4>
+              <p>4.8 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by AHR Group, LLC</span></p>
+            <p><span class="grey">Aug 15 - 27</span></p>
+            <p>$199 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1595877244574-e90ce41ce089?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Harbor Springs, MI</h4>
+              <p>5.0 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by SK Group, LLC</span></p>
+            <p><span class="grey">Jul 1 - 7</span></p>
+            <p>$349 night</p>
+          </div>
+        </div>
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1591825336242-9e4a7fc30b29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt="house"
+          />
+          <div>
+            <div class="card-title">
+              <h4>Stowe, VT</h4>
+              <p>4.6 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <p><span class="grey">Hosted by KSH management, LLC</span></p>
+            <p><span class="grey">Sept 8 - 12</span></p>
+            <p>$249 night</p>
+          </div>
+        </div>
+      </div>
+      <!-- Listings End -->
+
+      <div id="featured" class="featured">
+        <div class="title">
+          <h1>Featured</h1>
+        </div>
+        <div class="featured-wrapper">
+          <div class="main">
+            <img
+              src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb3BlcnR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800"
+              alt="/"
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1595877244574-e90ce41ce089?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              alt="/"
+            />
+          </div>
+          <div>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670963963921-a2da81ee17c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              alt="/"
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFuc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400"
+              alt="/"
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+              alt="/"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="popular" class="featured">
+        <div class="title">
+          <h1>Popular</h1>
+        </div>
+        <div class="featured-wrapper">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+              alt="/"
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400"
+              alt="/"
+            />
+          </div>
+          <div class="main">
+            <img
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvcGVydHl8ZW58MHx8MHx8&auto=format&fit=crop&w=800"
+              alt="/"
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1485996463739-9cb09adbe6c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="/"
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1498845914050-92ccc5f5dab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=846&q=80"
+              alt="/"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll to top -->
+      <div class="center">
+        <a href="#top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <ul class="left-menu">
+          <li>AirTravel</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Destinations</li>
+        </ul>
+        <ul class="right-menu">
+          <li>Support</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <!-- Container End -->
+    </div>
+    <script>
+      const menuBtn = document.querySelector('.mobile');
+      const navMenu = document.querySelector('.nav-menu');
+
+      const mobileMenu = () => {
+        menuBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      };
+
+      const closeMenu = () => {
+        navMenu.classList.toggle('active');
+      };
+    </script>
+  </body>
+</html>
